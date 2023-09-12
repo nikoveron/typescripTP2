@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Lista de Tareas</title>
+   
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Lista de Tareas</h1>
+        <div class="mb-3">
+            <input type="text" id="nombreTarea"  placeholder="Nombre de la tarea">
+            <input type="date" id="fechaVencimiento"  placeholder="Fecha de vencimiento">
+            <button id="agregarTarea" >Agregar Tarea</button>
+
+        </div>
+        <ul id="listaTareas" >
+            
+        </ul>
+    </div>
+
+    
+
+    <div class="container">
+        <h1 class="mt-5">Calculadora de Geometría</h1>
+        
+        <div class="mt-4">
+            <h2>Círculo</h2>
+            <div class="form-group">
+                <label for="radio">Radio:</label>
+                <input type="number" id="radio" class="form-control">
+            </div>
+            <button class="btn btn-primary" id="calcularCirculo" onclick="calcularCirculo()">Calcular</button>
+            <p>Área del círculo: <span id="areaCirculo"></span></p>
+            <p>Perímetro del círculo: <span id="perimetroCirculo"></span></p>
+        </div>
+        
+        <div class="mt-4">
+            <h2>Rectángulo</h2>
+            <div class="form-group">
+                <label for="largo">Largo:</label>
+                <input type="number" id="largo" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="ancho">Ancho:</label>
+                <input type="number" id="ancho" class="form-control">
+            </div>
+            <button class="btn btn-primary" id="calcularRectangulo" onclick="calcularRectangulo()">Calcular</button>
+            <p>Área del rectángulo: <span id="areaRectangulo"></span></p>
+            <p>Perímetro del rectángulo: <span id="perimetroRectangulo"></span></p>
+        </div>
+        
+        <div class="mt-4">
+            <h2>Triángulo</h2>
+            <div class="form-group">
+                <label for="base">Base:</label>
+                <input type="number" id="base" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="altura">Altura:</label>
+                <input type="number" id="altura" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="ancho">Ancho:</label>
+                <input type="number" id="anchoTri" class="form-control">
+            </div>
+            <button class="btn btn-primary" id="calcularTriangulo" onclick="calcularTriangulo()">Calcular</button>
+            <p>Área del triángulo: <span id="areaTriangulo"></span></p>
+            <p>Perímetro del triángulo: <span id="perimetroTriangulo"></span></p>
+        </div>
+    </div>
+
+
+   
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="module" src="./src/tareas/tareas.ts"></script>
+    <script type="module" src="./src/tareas/calculadora.ts"></script>
+</body>
+</html>
